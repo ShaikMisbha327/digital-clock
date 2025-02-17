@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(bgimage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.clock-container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+}
+
+.day-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    gap: 3px;
+}
+
+.day {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #d5d5d5;
+    padding: 5px;
+}
+
+.highlight {
+    color: #f39c12;
+}
+
+.time-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #060606;
+}
+
+.ampm {
+    font-size: 4rem;
+    color: #f39c12;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .day {
+        font-size: 1rem;
+        margin: 1px;
+    }
+
+    .time {
+        font-size: 2.5rem;
+    }
+
+    .ampm {
+        font-size: 2.5rem;
+    }
+
+    .day-container {
+        gap: 1.5px;
+    }
+}
